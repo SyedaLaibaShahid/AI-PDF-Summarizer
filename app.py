@@ -13,8 +13,7 @@ def main():
     pdf = st.file_uploader("Upload your PDF document", type="pdf")
     button = st.button("Generate Summary")
 
-    # ⚠️ NEVER hardcode API keys in real apps
-    os.environ["GOOGLE_API_KEY"] = "AIzaSyCgGov-XjaSx6xN4pS73QBxvPcd9VAWdBM"
+    os.environ["GOOGLE_API_KEY"] = ""
 
     if pdf is not None and button:
 
